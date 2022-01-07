@@ -81,3 +81,50 @@ body {
   line-height: 24px;
   color: #E27B3A;
 }
+
+#section {
+  margin-bottom: 50px;
+}
+
+.smile {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background-color: yellow;
+  position: relative;
+}
+
+.smile-eye {
+  width: 25px;
+  height: 40px;
+  position: absolute;
+  top: 80px;
+  left: 76px;
+  border-radius: 20px;
+  background-color: #000;
+  color: #000;
+  display: inline-block;
+}
+.smile-eye-two {
+  width: 25px;
+  height: 40px;
+  position: absolute;
+  top: 80px;
+  right: 76px;
+  border-radius: 20px;
+  background-color: #000;
+  color: #000;
+  display: inline-block;
+}
+
+.smile-evi {
+  width: 100px;
+  border-radius: 5px 5px 200px 200px;
+  height: 50px;
+  background-color: #000;
+  color: #000;
+  display: inline-block;
+  position: absolute;
+  top: 180px;
+  left: 100px;
+}
