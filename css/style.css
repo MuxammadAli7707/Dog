@@ -129,6 +129,7 @@ body {
   position: absolute;
   top: 180px;
   left: 100px;
+  
 }
 
 .smile:hover .smile-eye {
@@ -150,10 +151,109 @@ body {
 }
 
 .smile:hover {
+  transition: all 0.4s ease; 
    transform: rotate(45deg);
 }
 
 .emoji {
   display: flex;
   justify-content: center;
+}
+
+.box {
+  width: 150px;
+  height: 150px;
+  text-align: center;
+  background-color: red;
+  color: #fff;
+  line-height: 150px;
+  font-size: 22px;
+  position: relative;
+  z-index: 1;
+  transition-duration: 2s;
+  
+}
+
+.box:hover {
+  transition: all 2s ease;
+  z-index: 3;
+  transform: scale(1.2);
+  background-color: rgb(255, 119, 244);
+}
+
+.content {
+  width: 80%;
+  height: 600px;
+  border: 2px solid #000;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  margin: 0 auto;
+  margin-bottom: 100px;
+}
+
+.content:hover .box {
+  transform: translateY(430px);
+}
+
+.box:nth-child(1) {
+  transition-timing-function: linear;
+}
+.box:nth-child(2) {
+  transition-timing-function: ease;
+}
+.box:nth-child(3) {
+  transition-timing-function: ease-in;
+}
+.box:nth-child(4) {
+  transition-timing-function: ease-in-out;
+}
+.box:nth-child(5) {
+  transition-timing-function: steps(5);
+}
+.box:nth-child(6) {
+  transition-timing-function: cubic-bezier(0.96,-0.51, 0, 1.88);
+}
+
+.main {
+  width: 204px;
+  height: 204px;
+  border: 3px solid #000;
+  perspective: 500px;
+  display: flex;
+  justify-content: space-between;
+  transform-style: preserve-3d;
+  margin: 0 auto;
+  background-image: url('https://images.news18.com/ibnlive/uploads/2021/03/1614676202_c75c28559e048ecb2e0c232a374ebaa2.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-bottom: 100px;
+}
+
+.door {
+  width: 198px;
+  height: 198px;
+  text-align: center;
+  font-size: 15px;
+  line-height: 198px;
+  background-color: rgb(66, 64, 64);
+  color: #fff;
+  position: relative;
+  z-index: 1;
+  transition-duration: 0.5s;
+  transform: rotateY(0deg);
+  transform-origin: 0 0;
+}
+.main:hover .door:nth-child(1) {
+  transform: rotateY(-135deg);
+}
+
+.door:nth-child(2) {
+  transform-origin: 100% 100%;
+}
+
+.main:hover .door:nth-child(2) {
+  transform-origin: 100% 100%;
+  transform: rotateY(135deg);
 }
